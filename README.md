@@ -76,6 +76,12 @@ Test input validation in Add Movie form
 # IDE: Android Studio
 
 Language: Kotlin
+<img width="1365" height="767" alt="Screenshot 2025-11-06 102949" src="https://github.com/user-attachments/assets/5d863350-7dc9-4f02-bba0-9c8829abb665" />
+<img width="1344" height="718" alt="Screenshot 2025-11-06 104427" src="https://github.com/user-attachments/assets/bdbc22f2-afe6-4ea1-b12f-c632b4dba802" />
+<img width="1365" height="714" alt="Screenshot 2025-11-06 105331" src="https://github.com/user-attachments/assets/620eec28-7c07-46fa-9318-2c1b01fc56bf" />
+
+
+
 
 Build System: Gradle with Kotlin DSL
 
