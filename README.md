@@ -1,5 +1,8 @@
 ## MovieBuster
-# App Overview
+
+# App Over
+<img width="293" height="452" alt="Screenshot 2025-11-06 094103" src="https://github.com/user-attachments/assets/3894433c-f61f-4b39-a6ff-c4ba5f866d55" />
+view
 MovieBuster is a modern Android application built with Kotlin that allows users to manage and review their favorite movies. The app features a clean, intuitive interface with three main screens and demonstrates core Android development concepts including parallel arrays, loops, and screen navigation.
 
 ## Features
