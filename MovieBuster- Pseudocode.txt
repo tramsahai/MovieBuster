@@ -1,0 +1,134 @@
+MovieBuster-> Pseudocode
+// PART 1:
+WHEN APP STARTS:
+    SHOW SPLASH SCREEN with logo and app name
+    WAIT 2 seconds
+    GO TO MAIN SCREEN
+
+// PART 2: 
+
+MAIN SCREEN SHOWS:
+    - App title "MovieBuster"
+    - Average rating of all movies
+    - "Add Movie" button
+    - "View Movies" button
+
+HOW TO CALCULATE AVERAGE RATING:
+    //Store movie data in parallel arrays
+    movie_titles = ["The Godfather", "The Dark Knight", "Pulp Fiction"]
+    directors = ["Francis Coppola", "Christopher Nolan", "Quentin Tarantino"] 
+    ratings = [5.0, 5.0, 4.0]
+    comments = ["Masterpiece", "Epic superhero", "Quirky and fun"]
+    
+    total = 0
+    // Loop through all ratings and add them up
+    FOR each rating IN ratings:
+        total = total + rating
+    
+    // Calculate average by dividing total by number of movies
+    average = total / number_of_movies
+    DISPLAY "Average Rating: 4.7/5"
+
+WHEN USER TAPS "ADD MOVIE" BUTTON:
+    GO TO ADD MOVIE SCREEN
+
+WHEN USER TAPS "VIEW MOVIES" BUTTON:
+    IF there are movies to show:
+        GO TO MOVIE LIST SCREEN
+    ELSE:
+        SHOW MESSAGE "No movies available"
+
+// PART 3: 
+
+ADD MOVIE SCREEN HAS:
+    - Text box for movie title
+    - Text box for director name  
+    - Text box for rating (1-5)
+    - Text box for comments
+    - "Save" button
+    - "Cancel" button
+
+WHEN USER TAPS "SAVE":
+    // First check if all information is valid
+    IF movie_title is empty:
+        SHOW ERROR "Please enter movie title"
+    ELSE IF director is empty:
+        SHOW ERROR "Please enter director name"
+    ELSE IF rating is empty OR not between 1-5:
+        SHOW ERROR "Please enter rating between 1-5"
+    ELSE IF comments is empty:
+        SHOW ERROR "Please enter comments"
+    ELSE:
+        // All information is good, save movie
+        ADD new movie to our arrays:
+            ADD movie_title to movie_titles array
+            ADD director to directors array  
+            ADD rating to ratings array
+            ADD comments to comments array
+        
+        SHOW MESSAGE "Movie added successfully!"
+        GO BACK TO MAIN SCREEN
+
+WHEN USER TAPS "CANCEL":
+    GO BACK TO MAIN SCREEN
+
+// PART 4: 
+
+MOVIE LIST SCREEN SHOWS:
+    - List of all movies with basic info
+    - "Back" button
+
+HOW WE DISPLAY MOVIES:
+    // Use a loop to show each movie
+    FOR i = 0 to number_of_movies:
+        movie_display = 
+            "🎬 " + movie_titles[i] +
+            "👨‍💼 Director: " + directors[i] +
+            "⭐ Rating: " + ratings[i] + "/5" +
+            "💬 " + comments[i]
+        
+        ADD movie_display to the list
+
+WHEN USER TAPS A MOVIE IN THE LIST:
+    SHOW POPUP with full movie details:
+        "🎬 The Godfather
+         👨‍💼 Director: Francis Coppola  
+         ⭐ Rating: 5.0/5
+         💬 Comment: A masterpiece of cinema"
+
+WHEN USER TAPS "BACK" BUTTON:
+    GO BACK TO MAIN SCREEN
+
+//PART 5:
+
+ IF USER DOES SOMETHING WRONG:
+    - Tries to save empty movie: SHOW HELPFUL ERROR
+    - Tries to view movies when none exist: SHOW FRIENDLY MESSAGE
+    - Enters rating like 6 or 0: EXPLAIN RATING MUST BE 1-5
+    - Forgets to enter comments: REMIND THEM TO ADD COMMENTS
+
+
+ PART 6:
+
+
+HOW WE STORE MOVIE INFORMATION:
+    // 4 columns:
+    // | Title       | Director          | Rating | Comments          |
+    // | The Godfather | Francis Coppola | 5.0    | Masterpiece       |
+    // | The Dark Knight | Christopher Nolan | 5.0 | Epic superhero   |
+    // | Pulp Fiction | Quentin Tarantino | 4.0   | Quirky and fun   |
+    
+    // All movies in same position across arrays
+    // Movie 1: titles[0], directors[0], ratings[0], comments[0]
+    // Movie 2: titles[1], directors[1], ratings[1], comments[1]
+
+
+ //PART 7: 
+
+USER CAN MOVE BETWEEN SCREENS:
+    Splash Screen → Main Screen 
+    Main Screen → Add Movie Screen → Main Screen
+    Main Screen → Movie List Screen → Main Screen
+
+//user can always get back to main screen
+
