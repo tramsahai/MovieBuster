@@ -1,0 +1,75 @@
+## MovieBuster
+# App Overview
+MovieBuster is a modern Android application built with Kotlin that allows users to manage and review their favorite movies. The app features a clean, intuitive interface with three main screens and demonstrates core Android development concepts including parallel arrays, loops, and screen navigation.
+
+## Features
+# Core Functionality
+Splash Screen: Beautiful welcome screen with app branding
+
+Main Dashboard: Display average movie ratings and quick access to features
+
+Movie Library: Browse all movies with detailed information
+
+Add Movies: Simple form to add new movies with ratings and comments
+
+Average Rating Calculation: Automatic calculation using loops and arrays
+
+# Technical Features
+Three-Screen Architecture: Splash → Main → Movie List/Add Movie
+
+Parallel Arrays: Efficient data storage for movie titles, directors, ratings, and comments
+
+Loop Processing: Calculates average ratings by iterating through movie data
+
+Error Handling: Input validation with user-friendly error messages
+
+Smooth Navigation: Seamless transitions between activities
+
+## Installation & Setup
+# Prerequisites
+Android Studio Arctic Fox or later
+
+Android SDK 21 (Lollipop) or higher
+
+Kotlin plugin
+
+BlueStacks emulator or physical Android device
+
+# Building the Project
+Clone the repository
+
+Open Android Studio and select "Open an existing project"
+
+Navigate to the cloned directory and select the project
+
+Wait for Gradle sync to complete
+
+Build the project (Build → Make Project)
+
+Run on emulator or connected device
+
+# Testing
+The app includes sample data from IMDb Top Movies
+
+Test navigation between all screens
+
+Verify average rating calculation
+
+Test input validation in Add Movie form
+
+## Development Tools
+# IDE: Android Studio
+
+Language: Kotlin
+
+Build System: Gradle with Kotlin DSL
+
+Minimum SDK: API 21 (Android 5.0 Lollipop)
+
+Target SDK: API 34 (Android 14)
+
+Testing: BlueStacks Emulator
+
+# Developer
+Thasmei Ramsahai
+Android Developer | Kotlin Enthusiast
